@@ -1,38 +1,186 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+#body {
+    height: 100vh;
+    background-color: #0B1324;
+    font-family: "Poppins", sans-serif;
+    color: #C1CBF4;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.flex-row {
+    display: flex;
+    flex-direction: row;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.v-center {
+    display: flex;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.flex-col {
+    display: flex;
+    flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:hover {
+    color: #50E2BA;
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center; 
+    color: #50E2BA;
+}
+
+#navbar {
+    padding: 0 50px 0 50px;
+    font-family: "Roboto Mono", monospace;
+}
+
+#navbar h2{
+    font-weight: 100;
+    white-space: nowrap;
+}
+
+#nav-name {
+    flex: 1;
+    font-family: "Poppins", sans-serif;
+    color: #50E2BA;
+    display: flex;
+    align-items: center;
+}
+
+#nav-name img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+#nav-links {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbutton {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    margin-left: 20px;
+	font: inherit;
+	outline: inherit;
+}
+
+#items {
+    flex: 3
+}
+
+#cards {
+    padding-left: 40px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px 15px 15px;
+    margin: 0 40px 40px 0;
+    background-color: #757EA0;
+    border-radius: 25px;
+    width: 250px;
+    height: 350px;
+}
+
+.card img {
+    object-fit: cover;
+    align-self: center;
+    width: 100%;
+    min-height: 200px;
+    max-height: 200px;
+    border-radius: 25px;
+}
+
+.card p {
+    margin: 10px 0 0 0;
+}
+
+.title {
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+}
+
+.button {
+    align-self: center;
+    width: 200px;
+    height: 30px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1em;
+}
+
+.add{
+    background-color: #Af1D45;
+    margin-top: auto;
+}
+
+.add:hover {
+    background-color: #991a3d;
+}
+
+.add:active {
+    transform: scale(102%);
+}
+
+#cart {
+    flex: 1;
+    padding: 0 20px 0 20px;
+}
+
+.cart-item {
+    background-color: #757EA0;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    padding: 0 20px 0 20px;
+    justify-content: space-between;
+}
+
+.cart-item-text {
+    flex: 1;
+    justify-content: space-between;
+}
+
+.delete {
+    justify-content: end;
+    width: 60px;
+}
+
+.delete button {
+    width: 80%;
+    height: 80%;
+    border: none;
+    border-radius: 25px;
+    background-color: #Af1D45;
+    color: white;
 }
